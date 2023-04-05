@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "878094187451",
+    "project_id": "teampro-walking",
+    "storage_bucket": "teampro-walking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878094187451:android:68cb5ea7b4f4b9bb57e29e",
+        "android_client_info": {
+          "package_name": "com.example.walking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878094187451-ia2svd2m0na2u5vh7lme4fqeqb0utuu3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.walking",
+            "certificate_hash": "4320d1e1fafd8ff3ac57c7053dc4ae243c77d532"
+          }
+        },
+        {
+          "client_id": "878094187451-k7ltq7jusm2herqg5ts70tt9upl8kpcd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC49erlyQ5J8dshxQ7HV5OKfzjufMsbK5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878094187451-k7ltq7jusm2herqg5ts70tt9upl8kpcd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

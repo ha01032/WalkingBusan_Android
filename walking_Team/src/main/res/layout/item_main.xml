@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- Title Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/name_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="7.5dp"
+                android:src="@drawable/step" />
+
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:fontFamily="@font/cookierunblack"
+                 />
+
+        </LinearLayout>
+
+        <!-- Content ImageView -->
+
+        <ImageView
+            android:id="@+id/main_img"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+             />
+
+        <!-- favorite & comment -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/likebtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_like"
+               />
+
+            <Button
+                android:id="@+id/likefill"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/like_fill"
+                android:visibility="gone"
+                />
+
+
+            <Button
+                android:id="@+id/mapbtn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/baseline_location_on_24"
+                app:itemIconTint="#673AB7"
+                android:layout_gravity="right"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <kr.co.prnd.readmore.ReadMoreTextView
+            android:id="@+id/maincontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:readMoreColor="@color/purple_500"
+            app:readMoreMaxLine="3"
+            app:readMoreText="...더보기" />
+
+<!--        더보기 기능 텍스트뷰 2개-->
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            >-->
+<!--            <TextView-->
+<!--                android:id="@+id/maincontent"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:maxLines="3"-->
+<!--                android:ellipsize="end"-->
+<!--                android:textColor="@color/black"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/view_more"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="더보기"-->
+<!--                android:visibility="gone"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/maincontent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+    </LinearLayout>
+</LinearLayout>

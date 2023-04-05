@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.BoardFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:nestedScrollingEnabled="false"
+        tools:listitem="@layout/activity_board_detail" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="68dp">
+
+        <!--     이미지 버튼 사용시 백그라운드 누끼 회색 없애는 코드
+                    android:background="@android:color/transparent"-->
+
+        <!--플로팅 버튼 추가 -->
+        <!--        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton-->
+        <!--            android:id="@+id/fab"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_marginRight="30dp"-->
+        <!--            android:layout_marginBottom="30dp"-->
+        <!--            android:fontFamily="@font/cookierunblack"-->
+        <!--            android:src="@drawable/img_pencil_white"/>-->
+
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/fab"
+        android:layout_width="61dp"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/cookierunblack"
+        android:scaleType="centerInside"
+        android:src="@drawable/write" />
+
+
+    <!--   글 작성 버튼은 플로팅 버튼으로 대체  -->
+    <!--    <Button-->
+<!--        android:id="@+id/reg_button"-->
+<!--        android:layout_weight="1"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="#673AB7"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:text="새 글 작성하기"-->
+<!--        android:fontFamily="@font/cookierunblack"-->
+<!--        />-->
+
+</FrameLayout>
